@@ -20,7 +20,7 @@ limitations under the License.
 
 # minutesInMonth
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Determine the number of minutes in a month.
 
@@ -186,6 +186,22 @@ $ minutes-in-month 2 2016
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/time/minutes-in-year`][@stdlib/time/minutes-in-year]</span><span class="delimiter">: </span><span class="description">determine the number of minutes in a year according to the Gregorian calendar.</span>
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -229,8 +245,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/time-minutes-in-month/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/time-minutes-in-month?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/time-minutes-in-month.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/time-minutes-in-month/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -242,6 +262,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/time-minutes-in-month/main/LICENSE
 
 [date-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+<!-- <related-links> -->
+
+[@stdlib/time/minutes-in-year]: https://github.com/stdlib-js/time-minutes-in-year
+
+<!-- </related-links> -->
 
 </section>
 
