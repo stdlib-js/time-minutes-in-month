@@ -45,6 +45,7 @@
     "@stdlib/cli-ctor": "^0.0.x",
     "@stdlib/constants-time-minutes-in-day": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/string-lowercase": "^0.0.x"
   },
   "devDependencies": {
