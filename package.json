@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/time-minutes-in-month",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "Determine the number of minutes in a month.",
   "license": "Apache-2.0",
   "author": {
