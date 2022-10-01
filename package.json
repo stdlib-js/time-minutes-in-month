@@ -46,7 +46,8 @@
     "@stdlib/constants-time-minutes-in-day": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
     "@stdlib/string-format": "^0.0.x",
-    "@stdlib/string-lowercase": "^0.0.x"
+    "@stdlib/string-lowercase": "^0.0.x",
+    "@stdlib/time-current-year": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.0.x",
