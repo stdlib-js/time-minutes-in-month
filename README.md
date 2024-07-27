@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@deno/mod.js';
+import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@v0.2.2-deno/mod.js';
 ```
 
 #### minutesInMonth( \[month\[, year]] )
@@ -108,7 +108,7 @@ var num = minutesInMonth( new Date() );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@deno/mod.js';
+import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@v0.2.2-deno/mod.js';
 
 var v;
 var i;
