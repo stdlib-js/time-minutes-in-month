@@ -35,19 +35,118 @@ limitations under the License.
 
 > Determine the number of minutes in a month.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/time-minutes-in-month
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
+</section>
 
+<section class="usage">
 
+## Usage
+
+```javascript
+var minutesInMonth = require( '@stdlib/time-minutes-in-month' );
+```
+
+#### minutesInMonth( \[month\[, year]] )
+
+Returns the number of minutes in a month.
+
+```javascript
+var num = minutesInMonth();
+// returns <number>
+```
+
+By default, the function returns the number of minutes in the current month of the current year (according to local time). To determine the number of minutes for a particular month and year, provide `month` and `year` arguments.
+
+```javascript
+var num = minutesInMonth( 2 );
+// returns <number>
+
+num = minutesInMonth( 2, 2016 );
+// returns 41760
+
+num = minutesInMonth( 2, 2017 );
+// returns 40320
+```
+
+A `month` may be either a month's integer value, three letter abbreviation, or full name (case insensitive).
+
+```javascript
+var num = minutesInMonth( 2, 2016 );
+// returns 41760
+
+num = minutesInMonth( 'feb', 2016 );
+// returns 41760
+
+num = minutesInMonth( 'february', 2016 );
+// returns 41760
+```
+
+The function also supports providing a [`Date`][date-object] object.
+
+```javascript
+var num = minutesInMonth( new Date() );
+// returns <number>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   The function's return value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates. 
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var minutesInMonth = require( '@stdlib/time-minutes-in-month' );
+
+var v;
+var i;
+
+for ( i = 0; i < 2021; i++ ) {
+    v = minutesInMonth( 'feb', i );
+    console.log( 'In the year %d, February has %d minutes.', i, v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -65,7 +164,7 @@ npm install -g @stdlib/time-minutes-in-month-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: minutes-in-month [options] [month] [year]
@@ -82,7 +181,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ minutes-in-month
@@ -115,9 +214,10 @@ $ minutes-in-month 2 2016
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/time-minutes-in-month`][@stdlib/time-minutes-in-month]</span><span class="delimiter">: </span><span class="description">determine the number of minutes in a month.</span>
 -   <span class="package-name">[`@stdlib/time-minutes-in-year`][@stdlib/time/minutes-in-year]</span><span class="delimiter">: </span><span class="description">determine the number of minutes in a year according to the Gregorian calendar.</span>
 
 </section>
@@ -137,7 +237,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -160,11 +260,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/time-minutes-in-month-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/time-minutes-in-month-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/time-minutes-in-month.svg
+[npm-url]: https://npmjs.org/package/@stdlib/time-minutes-in-month
 
-[test-image]: https://github.com/stdlib-js/time-minutes-in-month/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/time-minutes-in-month/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/time-minutes-in-month/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/time-minutes-in-month/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/time-minutes-in-month/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/time-minutes-in-month?branch=main
