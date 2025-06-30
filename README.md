@@ -35,33 +35,14 @@ limitations under the License.
 
 > Determine the number of minutes in a month.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/time-minutes-in-month
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var minutesInMonth = require( '@stdlib/time-minutes-in-month' );
+import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@deno/mod.js';
 ```
 
 #### minutesInMonth( \[month\[, year]] )
@@ -127,7 +108,7 @@ var num = minutesInMonth( new Date() );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var minutesInMonth = require( '@stdlib/time-minutes-in-month' );
+import minutesInMonth from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-minutes-in-month@deno/mod.js';
 
 var v;
 var i;
@@ -142,73 +123,7 @@ for ( i = 0; i < 2021; i++ ) {
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/time-minutes-in-month-cli
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: minutes-in-month [options] [month] [year]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ minutes-in-month
-<number>
-```
-
-For a specific month,
-
-```bash
-$ minutes-in-month 2
-<number>
-```
-
-For a specific month and year,
-
-```bash
-$ minutes-in-month 2 2016
-41760
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -233,7 +148,7 @@ $ minutes-in-month 2 2016
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -304,7 +219,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/time/minutes-in-year]: https://github.com/stdlib-js/time-minutes-in-year
+[@stdlib/time/minutes-in-year]: https://github.com/stdlib-js/time-minutes-in-year/tree/deno
 
 <!-- </related-links> -->
 
