@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-08-01)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`5c2e184`](https://github.com/stdlib-js/stdlib/commit/5c2e18438f5cb567e0fb2e192fda3d0cae1ba322) - **chore:** clean-up [(#13832)](https://github.com/stdlib-js/stdlib/pull/13832) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-07)
